@@ -1,109 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planetarium</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <img
-          src="./images/logo.png"
-          alt="Логотип"
-          width="147px"
-          height="37px"
-          class="headerlogo"
-        />
-        <ul class="headerLink">
-          <li><a class="headerLink" href="#!">Главная</a></li>
-          <li><a class="headerLink" href="#!">Событияя</a></li>
-          <li><a class="headerLink" href="#!">Акции</a></li>
-          <li><a class="headerLink" href="#!">Отзывы</a></li>
-          <li><a class="headerLink" href="#!">FAQ</a></li>
-          <li><a class="headerLink" href="#!">Контакты </a></li>
-        </ul>
-        <div class="headerInfo">
-          <div class="headerIcon">
-            <img
-              src="./images/WhatsApp.png"
-              alt="Соц.сеть: WhatsApp"
-              width="21.974002838134766px"
-              height="21.57658576965332px"
-            />
-            <img
-              src="./images/Telegram.png"
-              alt="Соц.сеть: Telegram"
-              width="24.920433044433594px"
-              height="21.64102554321289px"
-            />
-          </div>
-          <a class="headerLink" href="#">(812) 336 36 36</a>
-          <a href="#!" class="btn">Купить билет</a>
-        </div>
-      </div>
-    </header>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-    <main class="main">
-        <div class="container">
-          <div class="all_welcome">
-            <div class="welcome_blocks">
+<body>
+  <header class="header">
+    <div class="icon">
+      <img src="./images/logo.svg" alt="'Логотип" width="37" height="37">
+      <h1 class="Celestia">Celestia</h1>
+    </div>
+  <div class="right_header">
+    <div class='Social_Media'>
+      <img src="./images/WhatsApp.svg" alt="WhatsApp" width="22" height="22">
+      <img src="./images/Telegram.svg" alt="Telegramm" width="22" height="22">
+    </div>
+    <button class="burger_button">  
+      <img src="./images/hamburger.svg" alt="Гамбургер" width="14" height="32">
+    </button>
+  </div>
+</header>
 
-                    <div class="welcome_title">Раскройте тайны звезд <br>с помощью <span class="Celestia">Celestia</span></div>
-                    <div class="welcome_text"> Мы проводим специальные мероприятия, такие как ночи наблюдения за звездами, <br>лекции и многое другое</div>
-                <a class="welcome__btns-wrapper" href="#!">Подробнее</a>
-              </d>
-              <div class="welcome_pictures">
-                  <div class="welcome_circle1"></div><div class="welcome_circle2"></div>
-                <svg class="cometa" width="77" height="79" viewBox="0 0 77 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M35.7412 68.0855L15.7528 46.6135L1.99766 31.4422C1.16549 30.0519 0.0567522 26.8918 2.27922 25.3743C4.50169 23.8568 7.20032 25.6048 8.27183 26.6685L14.3497 33.3721C15.2885 34.88 17.8621 37.388 20.6465 35.3562C23.4309 33.3245 20.6835 29.7273 18.9618 28.1827C17.5547 27.1033 14.4116 23.3394 16.9401 21.0254C19.4685 18.7114 22.7551 22.2793 24.2137 23.699L33.9966 33.6487C38.2021 37.224 42.3132 32.2061 39.1248 28.4514C37.3605 26.3738 34.7696 23.5669 34.0066 22.8063C31.9068 20.7129 28.7344 17.5238 31.1661 14.935C33.7133 12.2232 37.83 16.7527 38.6738 17.76C38.5877 17.649 38.464 17.4866 38.2989 17.2641L28.3668 6.66375C27.6151 5.95287 25.7864 3.33164 27.7655 1.26218C30.2393 -1.32466 33.6291 1.95527 34.9139 3.25418L43.2309 12.4275L67.6725 39.6736C71.4059 43.8354 75.1986 48.3147 75.8651 53.8649C76.5249 59.3585 75.3144 66.35 69.0136 72.7568C61.6385 80.256 52.6981 79.2621 46.3232 76.5514C42.121 74.7646 38.8528 71.428 35.7412 68.0855Z" fill="#3805F2" />
-                </svg>
-                <svg class="planet" width="182" height="153" viewBox="0 0 182 153" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <ellipse cx="56.8707" cy="57.0379" rx="56.8707" ry="57.0379" transform="matrix(0.900934 0.433957 -0.430662 0.902513 64.811 0)" fill="#3805F2" />
-                  <g filter="url(#filter0_d_16_487)">
-                    <path d="M169.701 45.2478C171.066 48.6552 170.422 52.846 167.777 57.6375C165.138 62.4201 160.579 67.6569 154.407 73.0223C142.071 83.7462 123.466 94.8335 101.513 103.705C79.5601 112.576 58.4945 117.519 42.2016 118.364C34.05 118.787 27.1506 118.181 21.9491 116.566C16.738 114.949 13.3837 112.374 12.0189 108.967C10.6542 105.56 11.2987 101.369 13.943 96.5774C16.5824 91.7947 21.1415 86.5579 27.3134 81.1926C39.6495 70.4686 58.2545 59.3813 80.2073 50.5102C102.16 41.6391 123.226 36.6956 139.519 35.8506C147.67 35.4278 154.57 36.0342 159.771 37.6484C164.982 39.2656 168.337 41.8404 169.701 45.2478Z" stroke="#3805F2" stroke-width="2" shape-rendering="crispEdges" />
-                  </g>
-                  <defs>
-                    <filter id="filter0_d_16_487" x="6.32373" y="34.7191" width="169.073" height="92.7767" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                      <feOffset dy="4" />
-                      <feGaussianBlur stdDeviation="2" />
-                      <feComposite in2="hardAlpha" operator="out" />
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_16_487" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_16_487" result="shape" />
-                    </filter>
-                  </defs>
-                </svg>
-            </div>
-        </div>
-        <div class="welcome_dop_block">
-        <div class="welcome_small_block">
-        <div class="welcome_parochek">
-          <div class="welcome_parochek_title">для <br>парочек</div>
-          <div class="welcome_parochek_text">ночи наблюдения <br>за звездами</div>
-          <button class="welcome_parochek_btn">
-            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1.5L19.5 20M19.5 20L1 20M19.5 20L19.5 0" stroke="black" />
-            </svg></button>
-        </div>
-        <div class="welcome_skidka">
-          <div class="welcome_skidka_title">20%</div>
-          <div class="welcome_skidka_text">скидка пенсионерам</div>
-          <button class="welcome_skidka_btn">
-            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1.5L19.5 20M19.5 20L1 20M19.5 20L19.5 0" stroke="black" />
-            </svg></button></div></div>
-          <div class='welcome_static'>
-            <img class="welcome_full_logo" src="/images/logo_full.png"  alt="'Полный Логотип"/>
-            <div class="welcome_static_zal"> >50 <br> <span class="zal">залов</span></div>
-            <div class="welcome_static_programm"> >100 <br> <span class="programm">программ про <br>Вселенную</span></div>
-            <div class="welcome_staticte_teleskop">>20 <br> <span class="teleskop">телескопов</span></div>
-        </div>
+<main>
+  <div class="Container">
+      <section class="first_block">
+          <h1 class="firstBlockName">Раскройте тайны звезд с помощью <span class="Celestia_body">Celestia</span></h1>
+          <span class="firstBlockText">Мы проводим специальные мероприятия, такие как ночи наблюдения за звездами, лекции и многое другое</span>
+        <button class="firstBlockButton">Подробнее</button>
+      </section>
+      <section class="second_block">
+        <section class="second_TextName">
+          <h1 class="secondBlockName">20%</h1>
+          <span class="secondtBlockText">скидка пенсионерам</span>
+        </section>
+        <a href="#Action" class="secondBlockButton">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="30" height="30" rx="15" fill="white" />
+            <path d="M10 10.4054L20 20.4054M20 20.4054L10 20.4054M20 20.4054L20 9.59458" stroke="black" />
+          </svg>
+        </a>
+      </section>
+    <section class="third_block">
+    <section class='second_TextName'>
+        <p h1 class="thirdBlockName">для 
+парочек</p>
+        <p class="thirdtBlockText">ночи наблюдения  
+за звездами</p>
+    </section>
+      <a href="#Action" class="thirdBlockButton">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="30" height="30" rx="15" fill="#3805F2" />
+          <path d="M10 10.4054L20 20.4054M20 20.4054L10 20.4054M20 20.4054L20 9.59458" stroke="white" />
+        </svg>
+      </a>
+      </section>
+
+    <section class="AboutInfo">
+      <div class="AboutInfo_teleskop">
+        <h1 class="AboutInfo_Title">>20</h1>
+        <p class="AboutInfo_Text">телескопов</p>
       </div>
+      <div class="AboutInfo_programm">
+        <h1 class="AboutInfo_Title">>100</h1>
+        <p class="AboutInfo_Text">программ</p>
       </div>
-    </main>
-  </body>
+      <div class="AboutInfo_zalov">
+        <h1 class="AboutInfo_Title">>50</h1>
+        <p class="AboutInfo_Text">залов</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+
 </html>
+
+
