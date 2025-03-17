@@ -8,21 +8,23 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="icon">
-      <img src="./images/logo.svg" alt="'Логотип" width="37" height="37">
-      <h1 class="Celestia">Celestia</h1>
+  <div class="Container">
+    <header class="header">
+      <div class="icon">
+        <img src="./images/logo.svg" alt="'Логотип" width="37" height="37">
+        <h1 class="Celestia">Celestia</h1>
+      </div>
+    <div class="right_header">
+      <div class='Social_Media'>
+        <img src="./images/WhatsApp.svg" alt="WhatsApp" width="22" height="22">
+        <img src="./images/Telegram.svg" alt="Telegramm" width="22" height="22">
+      </div>
+      <button class="burger_button">  
+        <img src="./images/hamburger.svg" alt="Гамбургер" width="14" height="32">
+      </button>
     </div>
-  <div class="right_header">
-    <div class='Social_Media'>
-      <img src="./images/WhatsApp.svg" alt="WhatsApp" width="22" height="22">
-      <img src="./images/Telegram.svg" alt="Telegramm" width="22" height="22">
-    </div>
-    <button class="burger_button">  
-      <img src="./images/hamburger.svg" alt="Гамбургер" width="14" height="32">
-    </button>
+    </header>
   </div>
-</header>
 
 <main>
   <div class="Container">
@@ -47,10 +49,8 @@
       </section>
       <section class="third_block">
       <section class='second_TextName'>
-          <p h1 class="thirdBlockName">для 
-  парочек</p>
-          <p class="thirdtBlockText">ночи наблюдения  
-  за звездами</p>
+          <h1 class="thirdBlockName">для парочек</h1>
+          <p class="thirdtBlockText">ночи наблюдения  за звездами</p>
       </section>
         <a href="#Action" class="thirdBlockButton">
           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 10.0038C17.3483 10.0038 14.8053 11.057 12.9303 12.9316C11.0553 14.8063 10.0019 17.3488 10.0019 20C10.0009 17.3485 8.94668 14.8059 7.07107 12.9314C5.19546 11.0568 2.65201 10.0038 0 10.0038C2.65302 10.0028 5.19703 8.94837 7.07264 7.07241C8.94825 5.19644 10.0019 2.65251 10.0019 0C10.0014 1.31322 10.2596 2.61368 10.7618 3.82712C11.264 5.04057 12.0003 6.14324 12.9287 7.07218C13.8571 8.00111 14.9594 8.73813 16.1727 9.24113C17.386 9.74414 18.6865 10.0033 20 10.0038Z" fill="#3805F2" />
         </svg>
-        <p class="Events_header_name">События</p>
+        <h1 class="Events_header_name">События</h1>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 10.0038C17.3483 10.0038 14.8053 11.057 12.9303 12.9316C11.0553 14.8063 10.0019 17.3488 10.0019 20C10.0009 17.3485 8.94668 14.8059 7.07107 12.9314C5.19546 11.0568 2.65201 10.0038 0 10.0038C2.65302 10.0028 5.19703 8.94837 7.07264 7.07241C8.94825 5.19644 10.0019 2.65251 10.0019 0C10.0014 1.31322 10.2596 2.61368 10.7618 3.82712C11.264 5.04057 12.0003 6.14324 12.9287 7.07218C13.8571 8.00111 14.9594 8.73813 16.1727 9.24113C17.386 9.74414 18.6865 10.0033 20 10.0038Z" fill="#3805F2" />
         </svg>
@@ -129,7 +129,7 @@
         <svg clas='Sales_name_img' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 10.0038C17.3483 10.0038 14.8053 11.057 12.9303 12.9316C11.0553 14.8063 10.0019 17.3488 10.0019 20C10.0009 17.3485 8.94668 14.8059 7.07107 12.9314C5.19546 11.0568 2.65201 10.0038 0 10.0038C2.65302 10.0028 5.19703 8.94837 7.07264 7.07241C8.94825 5.19644 10.0019 2.65251 10.0019 0C10.0014 1.31322 10.2596 2.61368 10.7618 3.82712C11.264 5.04057 12.0003 6.14324 12.9287 7.07218C13.8571 8.00111 14.9594 8.73813 16.1727 9.24113C17.386 9.74414 18.6865 10.0033 20 10.0038Z" fill="#3805F2" />
         </svg>
-        <p>Акции и скидки</p>
+        <h1>Акции и скидки</h1>
       </section>
       <section class="Sales_block_all">
         <div class="Sales_block">
@@ -155,19 +155,149 @@
         </svg>
       </section>
     </div>
+    <!-- !Отзывы и отметки -->
     <div class="Feetback">
-      <p class="Feetback_title">Отзывы и отметки</p>
-
+      <h1 class="Feetback_title">Отзывы и отметки</h1>
+      <section class="Feetback_first">
+        <article class="Feetback_first_stori">
+          <section class="Feetback_first_stori_header">
+            <img class ='Feetback_first_stori_user' src="./images/Feetback_first_user.png">
+            <svg class="Feetback_first_stori_details" width="233" height="2" viewBox="0 0 233 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31.1534 1H46.4227" stroke="white" stroke-width="0.763466" />
+              <path d="M48.4227 1H63.692" stroke="white" stroke-width="0.763466" />
+              <path d="M65.692 1H80.9614" stroke="white" stroke-width="0.763466" />
+              <path d="M82.9614 1H98.2307" stroke="white" stroke-width="0.763466" />
+              <path d="M100.231 1H115.5" stroke="white" stroke-width="0.763466" />
+              <path d="M117.5 1H132.769" stroke="white" stroke-width="0.763466" />
+              <path d="M134.769 1H150.039" stroke="white" stroke-width="0.763466" />
+              <path d="M152.039 1H167.308" stroke="white" stroke-width="0.763466" />
+              <path d="M169.308 1H184.577" stroke="white" stroke-width="0.763466" />
+              <path d="M186.577 1H201.847" stroke="white" stroke-width="0.763466" />
+              </svg>
+          </section>
+            <svg class='Feetback_first_first_star' width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.5385 14.0884C24.8414 14.0884 21.2958 12.6086 18.6816 9.97438C16.0674 7.3402 14.5988 3.7675 14.5988 0.0422153C14.5974 3.76799 13.1276 7.34068 10.5126 9.9747C7.89752 12.6087 4.35137 14.0884 0.653854 14.0884C4.35277 14.0898 7.89971 15.5714 10.5147 18.2075C13.1298 20.8435 14.5988 24.4181 14.5988 28.1453C14.5981 26.3 14.9581 24.4726 15.6583 22.7676C16.3584 21.0625 17.385 19.5131 18.6794 18.2078C19.9739 16.9025 21.5108 15.8669 23.2024 15.1601C24.894 14.4533 26.7072 14.0891 28.5385 14.0884Z" fill="white" />
+            </svg>
+            <svg class='Feetback_first_second_star' width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.0064 8.03939C13.0347 8.03939 11.1437 7.25013 9.74945 5.84524C8.35521 4.44035 7.57193 2.5349 7.57193 0.548085C7.57119 2.53516 6.78729 4.4406 5.3926 5.84541C3.99792 7.25022 2.10664 8.03939 0.134628 8.03939C2.10738 8.04015 3.99908 8.83034 5.39377 10.2362C6.78845 11.6421 7.57193 13.5485 7.57193 15.5364C7.57156 14.5522 7.76357 13.5776 8.13699 12.6683C8.5104 11.7589 9.05792 10.9325 9.74828 10.2364C10.4386 9.54022 11.2583 8.9879 12.1605 8.61094C13.0627 8.23398 14.0297 8.03977 15.0064 8.03939Z" fill="white" />
+            </svg>
+            <p class="Feetback_first_first_commit">#stellarium</p>
+            <p class="Feetback_first_second_commit">#планетарий</p>
+            <img src="./images/Feetback_first.svg" class="Feetback_first_stori_photo">
+          </article>
+        <section class="Sales_button">
+          <svg class='Sales_button_left' width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="15" fill="white" />
+            <path d="M17.8847 9.23071L13.6599 13.4555C12.4883 14.6271 12.4883 16.5266 13.6599 17.6982L17.8847 21.923" stroke="black" />
+          </svg>
+          <svg class='Sales_button_right'width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="15" fill="#324EEA" />
+            <path d="M12.1153 21.9231L16.3401 17.6983C17.5117 16.5267 17.5117 14.6272 16.3401 13.4556L12.1153 9.23079" stroke="white" />
+          </svg>
+        </section>
+      </section>
+    </div>
+    <!-- ! Часто задаваемые вопросы -->
+  <div class="Question">
+      <h1 class="Question_Title">Часто задаваемые вопросы</h1>
+      <div class="Question_faq">
+        <div class="Question_faq-item">
+          <label class="Question_faq-tetile" for="faq_1">
+            <section class="Question_faq-tetile_fill">
+              Какие выставки и события, посвященные космосу, проходят в планетарии?
+              <svg class="Question_faq-tetile_fill_button" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="30" rx="15" transform="matrix(1 0 0 -1 0 30)" fill="black" />
+                <path d="M20 15L10 15" stroke="white" stroke-linecap="round" />
+              </svg>
+            </section>
+          </label>
+          <input class="Question_faq-input" type="radio" name="'faq" id="faq_1">
+          <div class="Question_faq-text">
+            <p>Какие выставки и события, посвященные космосу, проходят в планетарии?</p>
+          </div>
+        </div>
+        <div class="Question_faq-item">
+          <label class="Question_faq-tetile" for="faq_2">Какие возможности есть для детей на выставках в планетарии?</label>
+          <input class="Question_faq-input" type="radio" name="'faq" id="faq_2">
+          <div class="Question_faq-text">
+            <p>Какие выставки и события, посвященные космосу, проходят в планетарии?</p>
+          </div>
+        </div>
+        <div class="Question_faq-item">
+          <label class="Question_faq-tetile" for="faq_3">Какова стоимость посещения выставок и событий в планетарии? в планетарии?</label>
+          <input class="Question_faq-input" type="radio" name="'faq" id="faq_3">
+          <div class="Question_faq-text">
+            <p>Какие выставки и события, посвященные космосу, проходят в планетарии?</p>
+          </div>
+        </div>
+      </div>
+      <button class="Question_button">Показать еще</button>
+    </div>
+    <!-- ! Ваш билет в космос — быстрая запись на экскурсию  -->
+    <div class="Consultation">
+      <h1 class="Consultation_title">Ваш билет в космос — быстрая запись на экскурсию</h1>
+      <section class="Consultation_welcome">
+        <img src="./images/Consultation_welcome_photo.svg" class="Consultation_welcome_photo">
+        <p class="Consultation_welcome_title">Запишитесь на экскурсию в планетарий. Просто укажите ваше имя, электронную почту и дату, и мы свяжемся с вами для подтверждения</p>
+      </section>
+      <article class="Consultation_form">
+        <form class="Consultation_form_input1">
+          <input class="Consultation_form_input" id="email" type="text" name="login" placeholder="Введите ваше имя" required="">
+          <input class="Consultation_form_input" id="email" type="text" name="number" placeholder="Номер телефона" required="">
+          <input class="Consultation_form_input" id="email" type="text" name="email" placeholder="Дата посещения" required="">
+          <button type="submit" class="Consultation_form_input_button">Отправить</button>
+        </form>
+        <p class="Consultation_form_tagging">*Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
+      </article>
+    </div>
+    <!-- ! Как нас найти? -->
+    <div class="Find">
+      <h1 class="Find_title">Как нас найти?</h1>
+      <section class="Find_map">
+        <img class='Find_map_point' src="./images/Find_map_point.svg">
+        <img class='Find_map_map'src="./images/Find_map.svg">
+      </section>
+      <article class="Find_info">
+        <img class="Find_info_icon_locatin" src="./images/icon_locatin.svg">
+        <p class="Find_info_adress">Екатеринбург, ул. Маршала Жукова, дом 12</p>
+        <section class="Find_SM">
+          <svg class="Find_SM_FB"width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#3805F2" />
+            <path d="M19.417 16.9316L19.8847 14.058H16.959V12.1933C16.959 11.4068 17.3673 10.6409 18.6735 10.6409H20V8.19442C19.221 8.07532 18.4338 8.01034 17.6448 8C15.2428 8 13.6716 9.37568 13.6716 11.8678V14.058H11V16.9316H13.6716V23.8792C14.7608 24.0403 15.8698 24.0403 16.959 23.8792V16.9316H19.417Z" fill="white" />
+          </svg>
+          <svg class="Find_SM_IG" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#3805F2" />
+            <path d="M16.5009 10.3494C18.5026 10.3494 18.739 10.3582 19.5309 10.3935C20.006 10.3994 20.4766 10.4865 20.9224 10.651C21.2455 10.7761 21.5388 10.9673 21.7836 11.2124C22.0284 11.4576 22.2193 11.7512 22.3439 12.0744C22.5101 12.5199 22.5979 12.9907 22.6032 13.4661C22.6384 14.2564 22.6455 14.4945 22.6455 16.4965C22.6455 18.4985 22.6455 18.7348 22.6032 19.525C22.5979 20.0004 22.5101 20.4713 22.3439 20.9167C22.2193 21.24 22.0284 21.5336 21.7836 21.7788C21.5388 22.0239 21.2455 22.2151 20.9224 22.3402C20.4766 22.5047 20.006 22.5918 19.5309 22.5977C18.7407 22.6348 18.5026 22.6418 16.5009 22.6418C14.4991 22.6418 14.2628 22.6418 13.4727 22.5977C12.9975 22.592 12.5269 22.5049 12.0811 22.3402C11.7576 22.2155 11.4638 22.0244 11.2187 21.7793C10.9736 21.5341 10.7825 21.2403 10.6578 20.9167C10.4933 20.4709 10.4063 20.0002 10.4004 19.525C10.3633 18.7348 10.3563 18.4967 10.3563 16.4965C10.3563 14.4962 10.3563 14.2564 10.4004 13.4661C10.4063 12.9909 10.4933 12.5203 10.6578 12.0744C10.7781 11.7487 10.9697 11.4539 11.2187 11.2119C11.4614 10.9637 11.7559 10.7721 12.0811 10.651C12.5269 10.4863 12.9975 10.3992 13.4727 10.3935C14.2628 10.3582 14.4991 10.3494 16.5009 10.3494ZM16.5009 9C14.4656 9 14.2081 9.00882 13.4109 9.0441C12.7887 9.05846 12.1734 9.17773 11.5908 9.39687C11.0932 9.58993 10.6412 9.8846 10.2637 10.2621C9.88626 10.6396 9.59162 11.0916 9.39859 11.5894C9.17845 12.1711 9.05916 12.7861 9.04586 13.4079C9.00882 14.2087 9 14.4663 9 16.5C9 18.5337 9.00882 18.793 9.04586 19.5903C9.05944 20.2127 9.17872 20.8282 9.39859 21.4106C9.59202 21.9079 9.88682 22.3595 10.2642 22.7367C10.6417 23.1138 11.0934 23.4083 11.5908 23.6014C12.1731 23.8214 12.7886 23.9407 13.4109 23.9541C14.2099 23.9912 14.4691 24 16.5009 24C18.5326 24 18.7937 24 19.5926 23.9541C20.2144 23.9408 20.8293 23.8215 21.4109 23.6014C21.9088 23.4091 22.3609 23.1149 22.7385 22.7376C23.116 22.3604 23.4105 21.9084 23.6032 21.4106C23.8223 20.828 23.9415 20.2126 23.9559 19.5903C23.9912 18.7913 24 18.532 24 16.5C24 14.468 23.9912 14.207 23.9559 13.4079C23.9417 12.7862 23.8225 12.1713 23.6032 11.5894C23.4109 11.0912 23.1165 10.6388 22.739 10.2612C22.3614 9.88357 21.9091 9.58917 21.4109 9.39687C20.8291 9.17753 20.2143 9.05826 19.5926 9.0441C18.7919 9.00882 18.5344 9 16.5009 9Z" fill="white" />
+            <path d="M16.5005 12.646C15.739 12.646 14.9946 12.8718 14.3615 13.2949C13.7283 13.718 13.2349 14.3194 12.9435 15.023C12.6521 15.7266 12.5758 16.5008 12.7244 17.2477C12.8729 17.9947 13.2396 18.6808 13.7781 19.2193C14.3165 19.7578 15.0025 20.1245 15.7494 20.2731C16.4962 20.4217 17.2703 20.3454 17.9738 20.054C18.6774 19.7625 19.2787 19.269 19.7017 18.6358C20.1248 18.0026 20.3506 17.2581 20.3506 16.4965C20.3508 15.9908 20.2514 15.49 20.058 15.0227C19.8646 14.5555 19.581 14.1309 19.2234 13.7733C18.8659 13.4157 18.4413 13.1321 17.9741 12.9386C17.5069 12.7452 17.0061 12.6458 16.5005 12.646ZM16.5005 18.9959C16.0061 18.9959 15.5229 18.8493 15.1119 18.5746C14.7008 18.2999 14.3805 17.9094 14.1914 17.4526C14.0023 16.9958 13.9529 16.4932 14.0495 16.0083C14.1461 15.5234 14.3843 15.078 14.734 14.7286C15.0836 14.3791 15.5291 14.1412 16.014 14.0449C16.4989 13.9487 17.0015 13.9984 17.4581 14.1879C17.9147 14.3773 18.3049 14.698 18.5793 15.1092C18.8537 15.5205 18.9999 16.0039 18.9996 16.4983C18.9994 16.8263 18.9345 17.151 18.8088 17.454C18.6831 17.7569 18.499 18.0321 18.2669 18.2639C18.0348 18.4957 17.7594 18.6794 17.4563 18.8047C17.1532 18.93 16.8284 18.9944 16.5005 18.9942V18.9959Z" fill="white" />
+            <path d="M20.503 13.3939C20.9997 13.3939 21.4025 12.9911 21.4025 12.4943C21.4025 11.9975 20.9997 11.5947 20.503 11.5947C20.0062 11.5947 19.6035 11.9975 19.6035 12.4943C19.6035 12.9911 20.0062 13.3939 20.503 13.3939Z" fill="white" />
+          </svg>
+          <svg class="Find_SM_YT" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#3805F2" />
+            <path d="M23.6659 20.1205C23.575 20.4856 23.3957 20.8186 23.1461 21.0858C22.8964 21.353 22.5854 21.545 22.2443 21.6424C21.0004 22 15.9964 22 15.9964 22C15.9964 22 10.9942 22 9.74678 21.6424C9.4071 21.5441 9.09764 21.3516 8.84961 21.0844C8.60158 20.8172 8.42376 20.4847 8.33407 20.1205C8 18.7888 8 16 8 16C8 16 8 13.215 8.33407 11.8795C8.42392 11.5154 8.6018 11.183 8.84981 10.9158C9.09781 10.6486 9.40718 10.4561 9.74678 10.3576C10.9907 10 15.9964 10 15.9964 10C15.9964 10 20.9969 10 22.2443 10.3576C22.5853 10.4552 22.8963 10.6472 23.1459 10.9144C23.3954 11.1816 23.5748 11.5145 23.6659 11.8795C24 13.2112 24 16 24 16C24 16 24 18.785 23.6659 20.1205ZM14.4043 13.4318V18.5682L18.5589 16L14.4043 13.4318Z" fill="white" />
+          </svg>
+        </section>
+        <section class="Find_info_contact">
+          <div class="Find_info_WAT">
+            <img src="./images/WhatsApp.svg" alt="WhatsApp" width="22" height="22">
+            <img src="./images/Telegram.svg" alt="Telegramm" width="22" height="22">
+          </div>
+          <a href="tel:+78123363636">+7 (812) 336 36 36</a>
+        </section>
+      </article>
+      <section class="Find_mailing">
+        <h1 class="Find_mailing_title">Подписаться на рассылку</h1>
+        <div class="text-field">
+          <input class="form__input text__regular" id="email" type="email" name="email" placeholder="Электронная почта" required="">
+        </div>
+        <button class="text_field_button">Подписатсья</button>
+      </section> 
+    <a href="!#" class="Politica">Политика конфиденциальности</a>
     </div>
   </div>
 </main>
 
-<footer>
-
-</footer>
 
 </body>
 
 </html>
-
 

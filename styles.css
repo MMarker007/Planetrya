@@ -4,10 +4,16 @@
 	box-sizing: border-box;
 }
 
-p {
-	white-space: pre;
-  }
 
+
+textarea { resize: none;  }
+placeholder {color: var(--white-color);}
+
+
+a{
+	text-decoration: none;
+	color: var(--white-color);
+}
 
 @font-face {
 	font-family: 'Benzin-Bold';
@@ -92,8 +98,6 @@ body{
 
 
 .header{
-	width: 100%;
-	max-width: 320px;
 	justify-content:space-between;
 	display: flex;
 	align-items: center;
@@ -146,12 +150,11 @@ body{
 
 
 .Container{
-	height: 488px;
-	gap: 10px;
+	gap: 80px;
 	top: 87px;
 	left: 15px;
 	max-width: 290px;
-    margin: 0 auto ;
+    margin: 0 auto  80px;
 }
 
 
@@ -606,3 +609,417 @@ body{
 	position: relative;
 	margin-top:30px;
 }
+
+.Feetback {
+	margin: 80px 0 80px 0;
+	position: relative;
+}
+.Feetback_title {
+	font-size: 20px;
+	line-height: 110%;
+	color: var(--white-color);
+	display: flex;
+	justify-content: center;
+}
+
+.Feetback_first {
+
+	margin-top:30px ;
+}
+.Feetback_first_stori {	
+	position: relative;
+	z-index: 100;
+}
+
+.Feetback_first_stori_photo{
+	border-radius: 30px;
+	width: 290px;
+	height: 400px;
+}
+
+
+.Feetback_first_stori_header{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	height: 47px;
+	gap: 7px;
+}
+.Feetback_first_stori_user {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	position: absolute;
+	left: 35px;
+	top: 23px;
+}
+.Feetback_first_stori_details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15px;
+}
+.Feetback_first_first_star {
+	position: absolute;
+	bottom: 25%;
+	left: 79%;
+}
+.Feetback_first_second_star {
+	position: absolute;
+	left: 75%;
+	bottom: 30%;
+}
+.Feetback_first_first_commit {
+	border-radius: 30px;
+	width: 139px;
+	height: 26px;
+	
+	position: absolute;
+	left: 35%;
+	bottom: 10%;
+
+	display: flex;
+	padding:3px 18px 0 18px ;
+	
+	background-color: var(--white-color);
+	color: var(--main-color);
+	rotate: -15deg;
+	bottom: 15%;
+
+	font-size: 10px;
+
+}
+.Feetback_first_second_commit {
+	border-radius: 30px;
+	width: 139px;
+	height: 26px;
+	z-index: 1;
+
+	position: absolute;
+	left: 42%;
+	bottom: 9%;
+
+	display: flex;
+	padding:3px 18px 0 18px ;
+
+	background-color: var(--main-color);
+	color: var(--white-color);
+	rotate: -5deg;
+
+	font-size: 10px;
+	
+}
+
+
+.Consultation {
+	color: var(--white-color);
+	margin-top:80px ;
+}
+.Consultation_title {
+
+	font-size: 20px;
+	line-height: 110%;
+	text-align: center;
+	color: var(--white-color);
+	margin-bottom:40px ;
+}
+.Consultation_welcome {
+	
+}
+.Consultation_welcome_photo {
+}
+.Consultation_welcome_title {
+	font-family: var(--text-front);
+	white-space: pre-line;
+
+	text-align: center;
+	margin: 30px 0 30px 0;
+
+
+	font-size: 12px;
+	line-height: 140%;
+
+
+}
+.Consultation_form {
+	margin: 10px;
+}
+
+.Consultation_form_input1{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.Consultation_form_input {
+    color: var(--black-color);
+    font-family: var(--text-front);
+	width: 290px;
+	height: 38px;
+    background-color: rgba(0, 0, 0, 0);	
+    border: 1px solid var(--white-color);
+	border-radius: 100px;
+    cursor: pointer;
+    margin-bottom: 10px;
+	padding: 10px 20px;	
+}
+
+.Consultation_form_input{
+	margin-bottom:10px ;
+	color: var(--black-color);
+	
+}
+
+.Consultation_form_input::placeholder {
+    line-height: 40px; /* Для вертикального выравнивания */
+	font-size: 12px;
+	color: var(--white-color);
+	
+}
+
+.Consultation_form_input_button{
+	border-radius: 55px;
+	padding: 10px 30px;
+	width: 290px;
+	height: 31px;
+	background-color: var(--main-color);
+	color: var(--white-color);
+	font-size: 12px;
+	line-height: 90%;
+	font-family: var(--main-front);
+	align-items: center;
+}
+
+.Consultation_form_tagging{
+	font-family: var(--text-front);
+	white-space: pre-line;
+	align-items: center;
+
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 120%;
+	text-transform: lowercase;
+	margin-top: 10px;
+}
+
+.Consultation_form_input_settings{
+	background-color: rgba(0, 0, 0, 0);
+	color: var(--white-color);
+	border: 0px;
+	width: 290px;
+	height: 31px;
+}
+
+
+.Question {
+}
+.Question_Title {
+	font-size: 20px;
+	line-height: 110%;
+	text-align: center;
+	color: var(--white-color);
+	margin-bottom:30px;
+}
+
+.Question_faq {
+	margin: 20px auto;
+}
+.Question_faq-item {
+	margin: 20px auto;
+}
+.Question_faq-tetile {
+	color: var(--white-color);
+	font-family: var(--main-front);
+	font-size: 12px;
+	line-height: 140%;
+
+	display: block;
+	font-size: 12px;
+	line-height: 110%;
+	color: var(--main-color);
+	background-color: var(--white-color);
+
+	border-radius: 30px;
+	padding: 16px 20px;
+	width: 290px;
+	height: 84px;
+	display: block;
+	cursor: pointer;
+
+}
+
+.Question_faq-input:checked + .Question_faq-tetile{
+	color: var(--black-color);
+}
+
+.Question_faq-input {
+	appearance: none;
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+
+.Question_faq-text {
+	display: none;
+	white-space: pre-line;
+	width: 290px;
+}
+
+.Question_faq-input:checked + .Question_faq-text{
+	display: block;
+}
+
+.Question_button{
+	border-radius: 55px;
+	padding: 16px 20px;
+	width: 290px;
+	height: 46px;
+	background-color: var(--main-color);
+	font-family: var(--main-front);
+	align-items: center;
+	color: var(--white-color);
+	margin-top: 20px;
+
+}
+
+.Question_faq-tetile_fill{
+	display: flex;
+}
+
+.Question_faq-tetile_fill_button{
+	width: 30px;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.Find {
+	margin-top:80px ;
+}
+.Find_title {
+	color: var(--white-color);
+	display: flex;
+	justify-content: center	;
+	font-size: 20px;
+	line-height: 110%;
+}
+.Find_map {
+	margin-top:30px ;
+	position: relative;
+}
+.Find_map_point {
+	position: absolute;
+	left:46%;
+	bottom: 43%;
+}
+
+.Find_info {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+.Find_info_adress{
+	display: flex;
+	justify-content: center;
+	color: var(--white-color);
+	font-family: var(--text-front);
+	font-size: 12px;
+	line-height: 140%;
+	text-align: center;
+	width: 200px;
+	height: 59px;
+	white-space: pre-line;
+	margin-top: 10px;
+}
+
+.Find_info_icon_locatin{
+	margin-top:20px ;
+	display: flex;
+	justify-content: center;
+}
+
+.Find_SM {
+	gap:20px;
+}	
+
+.Find_info_contact{
+	display: flex;
+	gap: 30px;
+	font-family: var(--text-front);
+	margin-top: 20px;
+}
+
+.Find_mailing {
+	border-radius: 30px;
+	padding: 20px;
+	width: 290px;
+	height: 180px;
+	background-color: var(--white-color);
+	color: var(--main-color);
+	white-space: pre-line;
+
+	display: flex;
+	flex-direction: column;
+}
+.text-field {
+	font-family: var(--second-family);
+	font-weight: 400;	
+	font-size: 16px;
+	line-height: 120%;
+	color: #3805f2;
+}
+
+.text_field_button{
+	border-radius: 100px;
+	padding: 10px 20px;
+	width: 250px;
+	height: 34px;
+	background-color: var(--main-color);
+	font-family: var(--main-family);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 120%;
+	color: var(--white-color);
+}
+.Politica {
+	font-family: var(--text-front);
+	font-size: 12px;
+	line-height: 140%;
+	color: var(--white-color);
+	margin-top: 20px;
+	display: flex;
+	justify-self: center;
+}
+
+.form__input {
+    color: var(--black-color);
+    font-family: var(--text-front);
+	width: 250px;
+	height: 38px;
+    background-color: rgba(0, 0, 0, 0);	
+    border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 100px;
+    cursor: pointer;
+    margin-bottom: 10px;
+	padding: 11px 27px;	
+}
+
+.form__input::placeholder {
+    text-align: center;
+    line-height: 40px; /* Для вертикального выравнивания */
+	
+}
+
+
+.Find_mailing_title{
+	font-size: 16px;
+}
+
+.Find_mailing{
+	margin-top: 30px;
+}
+
