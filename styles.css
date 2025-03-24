@@ -53,7 +53,7 @@ h1{
 }
 
 p::selection {
-    color: #fff;
+    color: var(--white-color);
     background-color: var(--main-color); 
 }
 button {
