@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Benzin-Bold';
+    src: url('/fonts/benzin-bold/benzin-bold.eot');
+    src: url('/fonts/benzin-bold/benzin-bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/benzin-bold/benzin-bold.woff2') format('woff2'),
+         url('/fonts/benzin-bold/benzin-bold.woff') format('woff'),
+         url('/fonts/benzin-bold/benzin-bold.ttf') format('truetype'),
+         url('/fonts/benzin-bold/benzin-bold.svg#benzin-bold') format('svg');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('/fonts/gilory-medium/gilroy-medium.eot');
+    src: url('/fonts/gilory-medium/gilroy-medium.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/gilory-medium/gilroy-medium.woff2') format('woff2'),
+         url('/fonts/gilory-medium/gilroy-medium.woff') format('woff'),
+         url('/fonts/gilory-medium/gilroy-medium.ttf') format('truetype'),
+         url('/fonts/gilory-medium/gilroy-medium.svg#gilroy-medium') format('svg');
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/fonts/Gilroy-Regular/gilroy-regular.eot');
+    src: url('/fonts/Gilroy-Regular/gilroy-regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Gilroy-Regular/gilroy-regular.woff2') format('woff2'),
+         url('/fonts/Gilroy-Regular/gilroy-regular.woff') format('woff'),
+         url('/fonts/Gilroy-Regular/gilroy-regular.ttf') format('truetype'),
+         url('/fonts/Gilroy-Regular/gilroy-regular.svg#gilroy-regular') format('svg');
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/fonts/Gilroy-Bold/gilroy-bold.eot');
+    src: url('/fonts/Gilroy-Bold/gilroy-bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Gilroy-Bold/gilroy-bold.woff2') format('woff2'),
+         url('/fonts/Gilroy-Bold/gilroy-bold.woff') format('woff'),
+         url('/fonts/Gilroy-Bold/gilroy-bold.ttf') format('truetype'),
+         url('/fonts/Gilroy-Bold/gilroy-bold.svg#gilroy-bold') format('svg');
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('/fonts/Gilroy-SemiBold/gilroy-semibold.eot');
+    src: url('/fonts/Gilroy-SemiBold/gilroy-semibold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Gilroy-SemiBold/gilroy-semibold.woff2') format('woff2'),
+         url('/fonts/Gilroy-SemiBold/gilroy-semibold.woff') format('woff'),
+         url('/fonts/Gilroy-SemiBold/gilroy-semibold.ttf') format('truetype'),
+         url('/fonts/Gilroy-SemiBold/gilroy-semibold.svg#gilroy-semibold') format('svg');
+}

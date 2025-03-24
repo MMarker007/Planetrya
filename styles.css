@@ -1,3 +1,12 @@
+@import url('font.css');
+
+
+::selection{
+    background-color: white;
+    color: black;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,55 +22,17 @@ a {
     color: var(--white-color);
 }
 
-@font-face {
-    font-family: 'Benzin-Bold';
-    src: url('/fonts/benzin-bold/benzin-bold.eot');
-    src: url('/fonts/benzin-bold/benzin-bold.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/benzin-bold/benzin-bold.woff2') format('woff2'),
-         url('/fonts/benzin-bold/benzin-bold.woff') format('woff'),
-         url('/fonts/benzin-bold/benzin-bold.ttf') format('truetype'),
-         url('/fonts/benzin-bold/benzin-bold.svg#benzin-bold') format('svg');
+h1{
+    margin: 0;
 }
 
-@font-face {
-    font-family: 'Gilroy-Medium';
-    src: url('/fonts/gilory-medium/gilroy-medium.eot');
-    src: url('/fonts/gilory-medium/gilroy-medium.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/gilory-medium/gilroy-medium.woff2') format('woff2'),
-         url('/fonts/gilory-medium/gilroy-medium.woff') format('woff'),
-         url('/fonts/gilory-medium/gilroy-medium.ttf') format('truetype'),
-         url('/fonts/gilory-medium/gilroy-medium.svg#gilroy-medium') format('svg');
+.line-break::before {
+    content: "\A"; /* Символ новой строки */
+    white-space: pre; /* Сохраняет пробелы и переносы */
 }
 
-@font-face {
-    font-family: 'Gilroy-Regular';
-    src: url('/fonts/Gilroy-Regular/gilroy-regular.eot');
-    src: url('/fonts/Gilroy-Regular/gilroy-regular.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Gilroy-Regular/gilroy-regular.woff2') format('woff2'),
-         url('/fonts/Gilroy-Regular/gilroy-regular.woff') format('woff'),
-         url('/fonts/Gilroy-Regular/gilroy-regular.ttf') format('truetype'),
-         url('/fonts/Gilroy-Regular/gilroy-regular.svg#gilroy-regular') format('svg');
-}
 
-@font-face {
-    font-family: 'Gilroy-Bold';
-    src: url('/fonts/Gilroy-Bold/gilroy-bold.eot');
-    src: url('/fonts/Gilroy-Bold/gilroy-bold.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Gilroy-Bold/gilroy-bold.woff2') format('woff2'),
-         url('/fonts/Gilroy-Bold/gilroy-bold.woff') format('woff'),
-         url('/fonts/Gilroy-Bold/gilroy-bold.ttf') format('truetype'),
-         url('/fonts/Gilroy-Bold/gilroy-bold.svg#gilroy-bold') format('svg');
-}
 
-@font-face {
-    font-family: 'Gilroy-SemiBold';
-    src: url('/fonts/Gilroy-SemiBold/gilroy-semibold.eot');
-    src: url('/fonts/Gilroy-SemiBold/gilroy-semibold.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Gilroy-SemiBold/gilroy-semibold.woff2') format('woff2'),
-         url('/fonts/Gilroy-SemiBold/gilroy-semibold.woff') format('woff'),
-         url('/fonts/Gilroy-SemiBold/gilroy-semibold.ttf') format('truetype'),
-         url('/fonts/Gilroy-SemiBold/gilroy-semibold.svg#gilroy-semibold') format('svg');
-}
 
 :root {
     --main-color: rgba(56, 5, 242, 1);
@@ -81,6 +52,10 @@ a {
     --text-front: 'Gilroy-Regular';
 }
 
+p::selection {
+    color: #fff;
+    background-color: var(--main-color); 
+}
 button {
     border: none;
     cursor: pointer;
@@ -91,6 +66,20 @@ body {
     background-color: var(--gray-color);
     font-family: var(--main-front);
 }
+.Container{
+    margin-left:15px ;
+    margin-right: 15px;
+}
+
+
+@media (min-width: 1024px) {
+    .Container {
+        margin-left:142px ;
+        margin-right: 142px;
+    }
+}
+
+
 
 /* === Header === */
 .header {
@@ -138,6 +127,36 @@ body {
     justify-content: center;
     gap: 8px;
 }
+.header_tel{
+    display: none;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.header_but{
+    border-radius: 100px;
+    padding: 10px 30px;
+    width: 157px;
+    height: 42px;
+    background-color: var(--white-color);
+    font-family: var(--text-front);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--black-color);
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .header_tel{
+        display: block;
+
+    }
+    .header_but{
+        display: block;
+    }
+}
 
 /* === Hero section === */
 .hero {
@@ -152,11 +171,15 @@ body {
 .first_block {
     padding: 20px;
     display: grid;
+    flex-direction: column;
+    min-width: 100%;
     gap: 20px;
     border-radius: 20px;
     background-color: var(--white-color);
     color: var(--black-color);
 }
+
+
 
 .firstBlockName {
     font-size: 20px;
@@ -189,15 +212,21 @@ body {
     justify-content: center;
 }
 
+.secondBlockButton{
+    width: fit-content;
+    height: fit-content;
+    place-self: flex-end;
+}
+
 .second_block {
-    width: 100%;
     padding: 20px;
     border-radius: 20px;
     background-color: var(--main-color);
     color: var(--white-color);
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    min-width: 290px;
+    flex-direction: column;
 }
 
 .second_TextName {
@@ -218,15 +247,20 @@ body {
 }
 
 .third_block {
-    width: 100%;
+    margin-top:10px ;
     padding: 20px;
     border-radius: 20px;
     background-color: var(--white-color);
     color: var(--black-color);
     display: flex;
     justify-content: space-between;
+    width: 100%;;
 }
 
+
+.center_header{
+    display: none;
+}
 .third_TextName {
     max-width: 110px;
     display: flex;
@@ -238,6 +272,7 @@ body {
     font-size: 20px;
     line-height: 1.1;
     justify-content: center;
+    margin-bottom:10px ;
 }
 
 .thirdtBlockText {
@@ -251,6 +286,10 @@ body {
     height: fit-content;
     place-self: flex-end;
 }
+
+
+
+
 
 .AboutInfo {
     display: flex;
@@ -282,6 +321,26 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+.AboutIndo_img{
+    display: none;
+}
+
+.secondthird_block{
+    width: 100%;
+}
+
+.secondthirdabout_block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
 
 /* === Events section === */
 .Events_header {
@@ -351,7 +410,6 @@ body {
 }
 
 .Events_photo_picture {
-    border-radius: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,7 +424,6 @@ body {
 }
 
 .Events_main_title {
-    width: 179px;
     font-size: 16px;
     line-height: 1.2;
     color: var(--white-color);
@@ -458,8 +515,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
+
+.Events_secondThird{
+    display: none;
+}
 /* === Sales section === */
 .Sales {
     margin-top: 80px;
@@ -467,12 +529,28 @@ body {
 }
 
 .Sales_name {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     gap: 10px;
     font-size: 20px;
     line-height: 1.1;
     text-align: center;
+    align-items: center;
+}
+
+.Sales_title{
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+.All_sales_info{
+    display: flex;
+    justify-content: center;
+}
+
+.Sales_block_all2,.Sales_block_all1{
+    display: none;
 }
 
 .Sales_block {
@@ -484,7 +562,32 @@ body {
     display: flex;
     flex-flow: column-reverse wrap;
     position: absolute;
-    top: 178px;
+    top: 200px;
+}
+
+.Sales_block1{
+    width: 290px;
+    height: 104px;
+    padding: 20px;
+    border-radius: 0 53px 31px 31px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-flow: column-reverse wrap;
+    position: absolute;
+    top: 200px;
+}
+
+.Sales_block2{
+    right: 0;
+    width: 290px;
+    height: 104px;
+    padding: 20px;
+    border-radius: 0 53px 31px 31px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-flow: column-reverse wrap;
+    position: absolute;
+    top: 200px;
 }
 
 .Sales_block_name {
@@ -492,6 +595,7 @@ body {
     font-size: 12px;
     line-height: 1.1;
     white-space: pre-line;
+    color: var(--white-color);
 }
 
 .Sales_block_about {
@@ -502,7 +606,9 @@ body {
     white-space: pre-line;
     margin-top: 10px;
     gap: 10px;
+    color: var(--white-color);
 }
+
 
 .Sales_block_link {
     width: 28px;
@@ -532,24 +638,23 @@ body {
 
 .Sales_block_img {
     width: 290px;
-    height: 260px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom:52px ;
 }
 
 .Sales_block_all {
     position: relative;
-    margin-top: 30px;
 }
 
 /* === Feedback section === */
-.Feetback {
-    margin: 80px 0;
-    position: relative;
-}
+
 
 .Feetback_title {
+    margin-top: 80px;
+    margin-bottom: 30px;
     font-size: 20px;
     line-height: 1.1;
     color: var(--white-color);
@@ -559,10 +664,23 @@ body {
 
 .Feetback_first {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.stori2,.stori3,.stori4{
+    display: none;
+}
+.stori1{
+    display: flex;
+    justify-content: center;
+}
+
+.Find_map2{
+    display: none;
 }
 
 .Feetback_first_stori {
-    position: relative;
     z-index: 100;
 }
 
@@ -651,6 +769,7 @@ body {
     text-align: center;
     color: var(--white-color);
     margin-bottom: 40px;
+    white-space: pre-line;
 }
 
 .Consultation_welcome_title {
@@ -674,7 +793,7 @@ body {
 }
 
 .Consultation_form_input {
-    width: 290px;
+    width: 100%;
     height: 38px;
     padding: 10px 20px;
     border-radius: 100px;
@@ -693,7 +812,7 @@ body {
 }
 
 .Consultation_form_input_button {
-    width: 290px;
+    width: 100%;
     height: 31px;
     padding: 10px 30px;
     border-radius: 55px;
@@ -724,53 +843,50 @@ body {
     text-align: center;
     color: var(--white-color);
     margin-bottom: 30px;
+    margin-top: 80px    ;
 }
 
-.Question_faq {
-    margin: 20px auto;
+
+summary {
+    list-style: none;
+
 }
 
-.Question_faq-item {
-    margin: 20px auto;
-}
-
-.Question_faq-tetile {
-    width: 290px;
-    height: 84px;
-    padding: 16px 20px;
-    border-radius: 30px;
-    background-color: var(--white-color);
-    color: var(--main-color);
-    font-size: 12px;
-    line-height: 1.1;
-    font-family: var(--main-front);
-    display: block;
-    cursor: pointer;
-}
-
-.Question_faq-input:checked + .Question_faq-tetile {
-    color: var(--black-color);
-}
-
-.Question_faq-input {
-    appearance: none;
-    position: absolute;
-    width: 0;
-    height: 0;
-}
-
-.Question_faq-text {
-    width: 290px;
+details[open] .plus {
     display: none;
-    white-space: pre-line;
 }
 
-.Question_faq-input:checked + .Question_faq-text {
-    display: block;
+details:not([open]) .minus {
+    display: none;
+}
+
+details:not([open]) p {
+    color: var(--main-color);
+}
+
+.Question_accordion_1 ,  .Question_accordion_2, .Question_accordion_3{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: var(--white-color);
+    color: (--black-color);
+    padding: 16px 0 16px 20px;
+    border-radius: 30px;
+    padding: 16px 20px;
+    min-height: 84px;
+    font-size: 12px;
+}
+
+.margin-bottom_20{
+    color: var(--white-color);
+    font-family: var(--text-front);
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 20px;
 }
 
 .Question_button {
-    width: 290px;
+    width: 100%;
     height: 46px;
     padding: 16px 20px;
     border-radius: 55px;
@@ -783,16 +899,8 @@ body {
     margin-top: 20px;
 }
 
-.Question_faq-tetile_fill {
-    display: flex;
-}
-
-.Question_faq-tetile_fill_button {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.Question_accordion_title{
+    margin-top: 20px;
 }
 
 /* === Find section === */
@@ -923,3 +1031,518 @@ body {
 .Find_mailing {
     margin-top: 30.1px;
 }
+
+
+.stori1{
+    width: 100%;
+}
+
+.All_sales_info{
+    gap:30px;
+    width: 100%;
+    height: 100%;
+}
+
+.allstori1 {
+    width: 0%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.stori11 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+
+.stori12,.stori13,.stori14{
+    display: none;
+}
+
+
+@media (min-width: 740px) {
+
+
+
+    .Container {
+        margin-left:142px ;
+        margin-right: 142px;
+    }
+    .Events_costbut{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:30px ;
+    }
+
+    .Events_content_button{
+        margin-bottom: 0;
+    }
+
+    .Events_about_programm{
+        font-size: 14px;
+    }
+
+    .class2{
+        display: block;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .Events_secondThird{
+        display: block;
+
+    .hero{
+        width: clamp(1024px, 1, 1920px);
+        height: clamp(270px, 1, 493px);
+        }
+    }   
+    .firstBlockName{
+        white-space: pre-line;
+    }
+    .first_block{
+        background-size: contain;
+        max-width: 1920px;
+    }
+    .stori2,.stori1,.stori3{
+        display: block;
+        max-height: 330px;
+        max-width: 240px;
+    }
+
+
+    .allstori_lap{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin-top: 40px;
+        max-height: 330px;
+    }
+
+    .Sales_block_all2,.Sales_block_all1{
+        display: block;
+        position: relative;
+    }
+
+    .stori12,.stori13{
+        display: block;
+    }
+
+    .allstori1{
+        height: 330px;
+        gap:10px
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .first_block{
+        background-color: rgb(255, 255, 255);
+        background-image: url(./images/FirstBlockMedia.svg);
+        max-height: 100%;
+        background-position: 100%;
+        background-repeat:no-repeat ;
+    }
+    .firstBlockName{
+        font-size: 32px;
+    }
+    .firstBlockText{
+        font-size: 20px;
+    }
+    .second_block{
+        margin-top: 10px;
+        min-width: 235px;
+        min-height: 100px;
+        
+    }
+    .third_block{
+        min-width: 235px;
+        min-height: 150px;
+        margin-top: 0px;
+        padding: 20px;
+    }
+    .secondthirdabout_block{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .secondthird_block{
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 235px;
+        min-block-size: 0%;
+        margin-right: 10px;
+    }
+
+    .AboutInfo{
+        display: none;
+    }
+    .AboutIndo_img{
+        display: block;
+    }
+
+    .Events_laptop{
+        display: flex;
+    }
+    .Events_laptop_center{
+        display: flex;
+        margin-left:80px;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .Consultation_welcome_photo{
+        width: 100%;
+        border-radius: 55px;
+    }
+
+    .Consultation_welcome_title{
+        font-size: 14px;
+        width: 60vw;
+        margin: 30px auto;
+    }
+
+    .Find_map{
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .Find_info{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Find_info_icon_locatin,.Find_info_contact,.Find_info_adress{
+        margin: 0;
+    }
+    .Find_mailing{
+        width: 100%;
+        display: flex;
+        max-height:146px ;
+    }
+    .Find_mailing_title{
+        font-size: 20px;
+    }
+
+    .email_foll{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        gap:5px;
+    }
+    .form__input  {
+        width: 40vw;
+    }
+
+    .Find_info_adress{
+        align-content: center;
+        width: 100%;
+    }
+    .full_adress{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .Find_info_icon_locatin{
+        margin-right: 10px;
+    }
+    .Find_tel{
+        align-content: center;
+    }
+    .Find_mailing{
+        margin-top: 10px;
+    }
+
+    .Question_accordion_1,.Question_accordion_2,.Question_accordion_3{
+        font-size:16px ;
+    }
+    .Question_accordion_text{
+        width: 60vw;
+    }
+
+    .margin-bottom_20{
+        font-size: 14px;
+    }
+    .Sales_block_img{
+        width: 240px;
+        height: 270px;
+    }
+    .Sales_block2,.Sales_block1,.Sales_block{
+        padding: 16px;
+        width: 240px;
+        height: 175px;
+        min-height: 175px;
+        display: flex;
+        flex-flow: column wrap;
+    } 
+    .Sales_block_link{
+        flex-direction: column-reverse;
+        position: absolute;
+        left: 84%;
+        top: 76%;
+    }
+    .Sales_button{
+        margin-top:80px ;
+    } 
+    .Sales_name{
+        margin-bottom: 30px;
+    }
+}
+.Question_accordion_1,.Question_accordion_2,.Question_accordion_3{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 1440px){
+
+    .stori14{
+        display: block;
+    }
+
+    .allstori1{
+        height: 427px;
+        gap:10px
+    }
+
+    .Container {
+        margin-left:290px ;
+        margin-right: 290px ;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1920px){
+
+    .Question_button{
+        height: 76px;
+    }
+    .Container {
+        margin-left:290px ;
+        margin-right: 290px ;
+        max-width: 1340px;
+    }
+
+    .stori2,.stori1,.stori3,.stori4{
+        display: block;
+        max-height: 330px;
+        gap:30px
+    }
+
+    .allstori{
+        display: flex;
+        justify-content: center;
+        gap:30px;
+        margin-top: 40px;
+        max-height: 330px;
+
+    }
+    .Events_dekstop_center{
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .Events_about_programm{
+        margin-bottom: 0px;
+
+    }
+
+    .Events_laptop{
+    }
+
+    .Events_dekstop{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .Events_about_programm_costbut{
+        margin-left: 42px;
+    }
+
+    .Events_costbut{
+        margin-top:30px ;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+
+    .Events_about_programm{
+        font-size: 16px;
+    }
+
+    .Events_main_title{
+        font-size: 20px;
+    }
+
+    .Events_photo_picture{
+        width: 313px;
+        height: 159px;
+    }
+
+    .firstBlockName{
+        font-size: 64px;    
+    }
+
+    .first_block{
+        height: 493px;
+    }
+
+    .firstBlockButton{
+        max-width: 280px;
+        max-height: 68px;
+        min-width: 280px;
+        top: 405px;
+        left: 329.97px;
+        gap: 10px;
+        border-radius: 50px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .firstBlockText{white-space: pre-line;}
+
+    .AboutIndo_img{
+        width: 899px;
+    }
+
+    .third_block{
+        width: 427px;
+        height:282px;
+        border-radius: 55px;
+    }
+
+    .second_block{
+    width: 427px;
+    height: 199px;
+    border-radius: 55px;
+    }
+
+    .thirdBlockName, .secondBlockName{
+        font-size: 40px;
+    }
+
+    .thirdtBlockText, .secondBlockText{
+        font-size: 20px;
+        width: 202px;
+    }   
+
+    .thirdBlockButtonRz{
+        width: 58px;
+        height: 58px;
+        margin: 0; padding: 0;
+    }
+
+    .Container{
+        margin-left:290px ;
+        margin-right: 290px ;
+        max-width: 1340px;
+        margin: 0 auto;
+    }
+    .secondthirdabout_block{
+        justify-content: space-between;
+    }
+
+    .Find_map{
+        display: none;
+    }
+    .Find_map2{
+        margin-top: 30px;
+        display: block;
+    }
+    .Find_info{
+        justify-content: space-between;
+    }
+
+    .Find_mailing{
+        width: 45vw;
+        border-radius:100px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 36px 50px;
+    }
+
+    .form__input{
+        width:12vw;
+    }
+
+    .Find_mailing_title{
+        width: 181px;
+    }
+
+    .foorLast{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .Events_header_name,.Sales_title,.Feetback_title,.Question_Title,.Consultation_title,.Find_title{
+        font-size: 56px;
+
+    }
+
+    .Sales_block_img{
+        width: 426px;
+        height: 457px;
+    }
+    .Sales_block2,.Sales_block1,.Sales_block{
+        position: relative;
+        top:70%;
+        padding: 16px;
+        width: 426px;
+        height: 167px;
+        min-height: 175px;
+        display: flex;
+        flex-flow: column wrap;
+    } 
+    .Sales_block_link{
+        flex-direction: column-reverse;
+        position: absolute;
+        left: 84%;
+        top: 60%;
+        width:  50px;
+        height: 50px;
+    }
+    .Sales_block_name{
+        white-space: pre-line;
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .Sales_block_about{
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .burger_button{
+        display: none;
+    }
+
+    .center_header{
+        display: block;
+        font-family: var(--text-front);
+    }
+    ul{
+        display: flex;
+        gap:32px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .center_header1{
+        font-family: var(--text-front);
+        font-size: 16px;
+    }
+
+    .nav{
+        font-family: var(--text-front);
+    }
+}
+
